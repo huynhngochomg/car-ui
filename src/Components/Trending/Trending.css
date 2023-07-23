@@ -1,0 +1,86 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.trending .secContainer .secHeading {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.trending .secContainer .secHeading .navBtns {
+  gap: 0.5rem;
+}
+.trending .secContainer .secHeading .navBtns .icon {
+  padding: 3px 5px;
+  background: var(--secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.trending .secContainer .secHeading .navBtns .icon:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.trending .carContainer {
+  gap: 2rem;
+}
+.trending .carContainer .singleCar {
+  transition: 0.3s ease-in-out;
+}
+.trending .carContainer .singleCar .imgDiv {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.trending .carContainer .singleCar .imgDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trending .carContainer .singleCar .carTitle {
+  color: var(--blackColor);
+  font-size: 15px;
+  padding-top: 10px;
+}
+.trending .carContainer .singleCar .miles {
+  color: var(--blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+}
+.trending .carContainer .singleCar .AWD {
+  padding: 1rem 0;
+  color: var(--blackColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+.trending .carContainer .singleCar .priceSeller {
+  gap: 1rem;
+}
+.trending .carContainer .singleCar .priceSeller span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.trending .carContainer .singleCar .priceSeller .price {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+.trending .carContainer .singleCar .priceSeller .seller {
+  background: var(--greyColor);
+  color: var(--textColor);
+}
+.trending .carContainer .singleCar:hover {
+  transform: translateY(-7px);
+}
+.trending .carContainer .singleCar:hover .imgDiv {
+  border: 3px solid var(--primaryColor);
+  cursor: pointer;
+}/*# sourceMappingURL=Trending.css.map */

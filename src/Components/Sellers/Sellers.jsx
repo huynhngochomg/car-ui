@@ -1,23 +1,37 @@
-import React from 'react'
 import './Sellers.css'
 import lamborghini from '../../Assets/Images/lamborghini.png'
 import bugatti from '../../Assets/Images/bugatti.png'
 import ferrari from '../../Assets/Images/ferrari.png'
 import gtr from '../../Assets/Images/gtr.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 const Sellers = () => {
+
+  
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  },[])
+
+
   return (
     <div className='sellers section'>
       <div className='secContainer container'>
-        <div className="secHeading grid">
-          <h3 className='secTitle'>
+        <div  className="secHeading grid">
+          <h3 data-aos='fade-right' className='secTitle'>
             Explore top sellers in town
           </h3>
-          <p>
+          <p data-aos='fade-right'>
             Joseph Samuel Girard holds the Guinness World Record for being the greatest salesman in the world.
           </p>
-          <div className='sellersContainer'>
+          <div className='sellersContainer grid'>
             {/* Single Seller */}
-            <div className='singleSeller flex'>
+            <div data-aos='fade-up' className='singleSeller flex'>
               <div className='imgDiv flex'>
                 <img src={bugatti} alt='lamborghini-image' className='img' />
               </div>
@@ -28,7 +42,7 @@ const Sellers = () => {
             </div>
 
             {/* Single Seller */}
-            <div className='singleSeller flex'>
+            <div data-aos='fade-up' className='singleSeller flex'>
               <div className='imgDiv flex'>
                 <img src={lamborghini} alt='lamborghini-image' className='img' />
               </div>
@@ -39,7 +53,7 @@ const Sellers = () => {
             </div>
 
             {/* Single Seller */}
-            <div className='singleSeller flex'>
+            <div data-aos='fade-up' className='singleSeller flex'>
               <div className='imgDiv flex'>
                 <img src={ferrari} alt='lamborghini-image' className='img' />
               </div>
@@ -50,7 +64,7 @@ const Sellers = () => {
             </div>
 
             {/* Single Seller */}
-            <div className='singleSeller flex'>
+            <div data-aos='fade-up' className='singleSeller flex'>
               <div className='imgDiv flex'>
                 <img src={gtr} alt='lamborghini-image' className='img' />
               </div>

@@ -5,25 +5,39 @@ import {BsArrowRightShort} from 'react-icons/bs'
 import {AiFillStar} from 'react-icons/ai'
 import bugattiReview from '../../Assets/Images/bugattiReview.jpg'
 import reviewer from '../../Assets/Images/reviewer.jpg'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 const Review = () => {
+
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  },[])
+
   return (
     <div className='review section'>
       <div className='secContainer container'>
         <div className='secHeading flex'>
-          <h3 className='secTitle'>
+          <h3 data-aos='fade-right' className='secTitle'>
             Recent Reviews
           </h3>
 
-          <div className='navBtns flex'>
+          <div data-aos='fade-left' className='navBtns flex'>
             <BsArrowLeftShort className='icon leftIcon'/>
             <BsArrowRightShort className='icon rightIcon'/>
           </div>
         </div>
 
         {/* Review Container */}
-        <div className='reviewContainer grid'>
+        <div className='reviewContainer grid' >
           {/* Single Review */}
-          <div className='singleReview grid'>
+          <div className='singleReview grid' data-aos='fade-up'>
             <div className='imgDiv'>
               <img src={bugattiReview} alt='Car Image'/>              
             </div>
@@ -57,7 +71,7 @@ const Review = () => {
           </div>
 
           {/* Single Review */}
-          <div className='singleReview grid'>
+          <div className='singleReview grid' data-aos='fade-up'>
             <div className='imgDiv'>
               <img src={bugattiReview} alt='Car Image'/>              
             </div>
@@ -91,7 +105,7 @@ const Review = () => {
           </div>
 
           {/* Single Review */}
-          <div className='singleReview grid'>
+          <div className='singleReview grid' data-aos='fade-up'>
             <div className='imgDiv'>
               <img src={bugattiReview} alt='Car Image'/>              
             </div>

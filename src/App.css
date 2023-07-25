@@ -83,4 +83,37 @@ img {
 .secTitle {
   color: var(--blackColor);
   font-size: 20px;
+}
+
+@media screen and (min-width: 940px) {
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+}
+::-moz-selection {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}
+::selection {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--secondaryColor);
 }/*# sourceMappingURL=App.css.map */

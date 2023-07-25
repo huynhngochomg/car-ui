@@ -21,7 +21,11 @@
         img {
             width: 36px;
             height: auto;
-            //background-color: var(--secondaryColor);
+            
+        }
+
+        &:hover {
+            cursor: pointer;
         }
 
     }

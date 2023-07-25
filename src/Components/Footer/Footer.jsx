@@ -1,12 +1,25 @@
 import React from 'react'
 import './Footer.css'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 const Footer = () => {
+
+  useEffect(() => {
+    Aos.init(
+      {
+        duration: 3000
+      }
+    )
+  },[])
+
   return (
     <div className='footer'>
       <div className='footerContainer container'>
         <div className='footerMenuDiv grid'>
-          <div className='singleGrid'>
+          <div data-aos='fade-up' className='singleGrid'>
             <span className='footerTitle'>
               About
             </span>
@@ -27,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='singleGrid'>
+          <div className='singleGrid' data-aos='fade-up'>
             <span className='footerTitle'>
               Become Seller
             </span>
@@ -48,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='singleGrid'>
+          <div className='singleGrid' data-aos='fade-up'>
             <span className='footerTitle'>
               Community
             </span>
@@ -69,7 +82,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='singleGrid'>
+          <div className='singleGrid' data-aos='fade-up'>
             <span className='footerTitle'>
               Booking Support
             </span>
@@ -92,7 +105,7 @@ const Footer = () => {
         </div>
 
         {/* Footer lower section */}
-        <div className='lowerSection grid'>
+        <div className='lowerSection grid' >
           <p> 2023 All right reserved</p>
           <blockquote> Huynh Hong Project</blockquote>
         </div>

@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <div className={header}>
-      <div className='logoDiv'>
+      <a href='#' className='logoDiv'>
         <img src={logoCar} alt='Logo Image' className='logo' />
-      </div>
+      </a>
       
       <div className={navbar}>
         <ul className='menu'>
